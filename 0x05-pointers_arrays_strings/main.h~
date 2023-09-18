@@ -1,0 +1,6 @@
+#ifndef MAIN.HEADER.FILE
+#define MAIN.HEADER.FILE
+
+void reset_to_98(int *n);
+
+#endif
