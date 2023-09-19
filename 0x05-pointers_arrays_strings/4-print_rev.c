@@ -6,8 +6,19 @@
  */
 void print_rev(char *s)
 {
-  int size = strlen(s);
-  char rev[size];
-  rev[size] = {s};
-
+  int leng = 0;
+  int i;
+  while (*s != '\0')
+    {
+      leng++;
+      s++;
+    }
+  s--;
+  for (i = leng; i > 0; i--)
+    {
+      _putchar(*s);
+      s--;
+    }
+  _putchar('\n');
+}
   
