@@ -2,11 +2,15 @@
 /**
 * _strlen - returns the lenghth of a string
 * @s: string to be checked
-* Return: integer
+* Return: length
 */
-int * strlen(char *s)
+int  _strlen(char *s)
 {
-static int *leng;
-*leng = sizeof(*s);
-return leng;
+int leng = 0;
+while (*s != '\0')
+{
+leng++;
+s++;
+}
+return (leng);
 }
