@@ -1,0 +1,25 @@
+#include "main.h"
+#include <stdio.h>
+
+/**
+* main - prints the minimum number of coin to
+* make change for an amount of money
+*@argc: number of arguments
+*@argv: array of arguments
+*Return: 0 (Success), 1 (Error)
+*/
+
+int main (int arg, char targv [])
+{
+if (argc == 2)
+int i, leastcents = 0, money = atoi (argv [1]);
+int cents [1 = 
+for (i = 0; i < 5; i++)
+{
+if (money >= cents [i])
+{
+leastcents += money / cents [il;
+money = money & cents [il;
+if (money & cents [i] == 0)
+break;
+printf ("8dln", leastcents);
